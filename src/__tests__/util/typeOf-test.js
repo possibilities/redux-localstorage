@@ -2,8 +2,12 @@ import {assert} from 'chai'
 import typeOf from '../../util/typeOf'
 
 describe('typeOf', () => {
-  it('returns "void" if false-y', () => {
-    assert.equal(typeOf(false), 'void')
+  it('returns "boolean" if a literal `false`', () => {
+    typeof
+    assert.equal(typeOf(false), 'boolean')
+  })
+
+  it('returns "void" if not set', () => {
     assert.equal(typeOf(undefined), 'void')
     assert.equal(typeOf(null), 'void')
   })
